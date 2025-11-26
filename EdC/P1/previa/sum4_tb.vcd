@@ -1,0 +1,258 @@
+$date
+	Tue Sep 23 09:52:09 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module sum4_tb $end
+$var wire 1 ! test_C_out $end
+$var wire 1 " test_c_out $end
+$var wire 4 # test_S [3:0] $end
+$var reg 4 $ test_A [3:0] $end
+$var reg 4 % test_B [3:0] $end
+$var reg 1 & test_c_in $end
+$scope module sum $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 & c_in $end
+$var wire 1 " c_out $end
+$var wire 1 ) c2 $end
+$var wire 1 * c1 $end
+$var wire 1 + c0 $end
+$var wire 4 , S [3:0] $end
+$scope module fa0 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 & c_in $end
+$var wire 1 + c_out $end
+$var wire 1 / sum1 $end
+$var wire 1 0 sum $end
+$var wire 1 1 carry2 $end
+$var wire 1 2 carry1 $end
+$scope module ha1 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var reg 1 2 carry $end
+$var reg 1 / sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 & a $end
+$var wire 1 / b $end
+$var reg 1 1 carry $end
+$var reg 1 0 sum $end
+$upscope $end
+$upscope $end
+$scope module fa1 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 + c_in $end
+$var wire 1 * c_out $end
+$var wire 1 5 sum1 $end
+$var wire 1 6 sum $end
+$var wire 1 7 carry2 $end
+$var wire 1 8 carry1 $end
+$scope module ha1 $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var reg 1 8 carry $end
+$var reg 1 5 sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 + a $end
+$var wire 1 5 b $end
+$var reg 1 7 carry $end
+$var reg 1 6 sum $end
+$upscope $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 * c_in $end
+$var wire 1 ) c_out $end
+$var wire 1 ; sum1 $end
+$var wire 1 < sum $end
+$var wire 1 = carry2 $end
+$var wire 1 > carry1 $end
+$scope module ha1 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var reg 1 > carry $end
+$var reg 1 ; sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 * a $end
+$var wire 1 ; b $end
+$var reg 1 = carry $end
+$var reg 1 < sum $end
+$upscope $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 ) c_in $end
+$var wire 1 " c_out $end
+$var wire 1 A sum1 $end
+$var wire 1 B sum $end
+$var wire 1 C carry2 $end
+$var wire 1 D carry1 $end
+$scope module ha1 $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var reg 1 D carry $end
+$var reg 1 A sum $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 ) a $end
+$var wire 1 A b $end
+$var reg 1 C carry $end
+$var reg 1 B sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+10
+0/
+0.
+0-
+b1 ,
+0+
+0*
+0)
+b0 (
+b0 '
+1&
+b0 %
+b0 $
+b1 #
+0"
+z!
+$end
+#2000
+1"
+1C
+1)
+1=
+1*
+17
+1+
+06
+0<
+0B
+12
+15
+1;
+1A
+1.
+1-
+13
+19
+1?
+b0 #
+b0 ,
+00
+b1 %
+b1 (
+b1111 $
+b1111 '
+0&
+#4000
+07
+16
+0=
+1<
+0C
+1B
+18
+05
+1>
+0;
+1D
+0A
+14
+1:
+1@
+b1111 #
+b1111 ,
+10
+b1111 %
+b1111 (
+1&
+#6000
+11
+00
+17
+06
+1=
+0<
+1C
+b0 #
+b0 ,
+0B
+02
+1/
+08
+15
+0>
+1;
+0D
+1A
+0-
+03
+09
+0?
+b0 $
+b0 '
+#8000
+0"
+0C
+1B
+0)
+0=
+1<
+0*
+07
+16
+0+
+0.
+0:
+1-
+19
+01
+b1111 #
+b1111 ,
+10
+b1010 %
+b1010 (
+b101 $
+b101 '
+0&
+#10000

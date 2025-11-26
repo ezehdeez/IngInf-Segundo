@@ -1,0 +1,3 @@
+A continuación se muestra un ejemplo de la configuración necesaria para ejecutar los programas:
+$ export BACKUP_WORK_DIR=/tmp/backup-work
+$ mkdir -p /tmp/backup-work
