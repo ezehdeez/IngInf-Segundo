@@ -13,6 +13,8 @@
 
 #include <string>
 
+#include "../includes/functions.h"
+
 std::string GetEnviromentalVariable(const std::string& name) {
   char* value = getenv(name.c_str());
   if(value) {

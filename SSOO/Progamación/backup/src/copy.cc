@@ -13,6 +13,8 @@
 #include <cerrno>
 #include <fcntl.h>
 
+#include "../includes/copy.h"
+
 bool check_args(int argc, char* argv[]) {
   if(argc != 3) {
     std::cerr << "[ERROR] Copy: Se deben indicar los archivos ORIGEN y DESTINO" << std::endl;

@@ -16,3 +16,9 @@
 #include <expected>
 
 std::string GetEnviromentalVariable(const std::string& name);
+std::string get_work_dir_path();
+std::string get_fifo_path();
+std::expected<std::string, std::system_error> get_absolute_path(const std::string& path);
+bool file_exists(const std::string& path);
+bool is_regular_file(const std::string& path);
+std::string get_current_dir();

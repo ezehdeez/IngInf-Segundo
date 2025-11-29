@@ -18,3 +18,5 @@
 std::expected<void, std::system_error> copy_file(const std::string& src_path, 
                                                 const std::string& dest_path, 
                                                 mode_t dst_perms = 0);
+std::string get_filename(const std::string& path);
+bool is_directory(const std::string& path);
