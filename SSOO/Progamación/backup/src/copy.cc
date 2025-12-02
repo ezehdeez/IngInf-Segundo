@@ -93,6 +93,7 @@ std::expected<void, std::system_error> copy_file(const std::string& src_path,
   return {};
 }
 
+/*
 int main(int argc, char* argv[]) {
   if(!check_args(argc, argv)) {
       return EXIT_FAILURE;
@@ -110,3 +111,4 @@ int main(int argc, char* argv[]) {
   }
   return EXIT_SUCCESS;
 }
+*/
