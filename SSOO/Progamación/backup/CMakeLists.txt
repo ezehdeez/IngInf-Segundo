@@ -47,7 +47,6 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # **********************************************
 add_executable(backup  
     src/backup.cc
-    src/copy.cc
     src/functions.cc
 )
 
