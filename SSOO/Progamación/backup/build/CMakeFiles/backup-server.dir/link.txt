@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/backup-server.dir/src/backup-server.cc.o" "CMakeFiles/backup-server.dir/src/functions.cc.o" -o backup-server 

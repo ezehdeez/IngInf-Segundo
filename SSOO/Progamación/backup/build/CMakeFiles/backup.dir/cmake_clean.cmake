@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/backup.dir/src/backup.cc.o"
+  "CMakeFiles/backup.dir/src/backup.cc.o.d"
+  "CMakeFiles/backup.dir/src/functions.cc.o"
+  "CMakeFiles/backup.dir/src/functions.cc.o.d"
+  "backup"
+  "backup.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/backup.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

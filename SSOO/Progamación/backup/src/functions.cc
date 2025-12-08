@@ -67,7 +67,7 @@ bool is_regular_file(const std::string& path) {
 bool is_directory(const std::string& path) {
   struct stat file_info;
   if(stat(path.c_str(), &file_info) == -1) {
-    std::cerr << "[WARNING]: Error al guardar el stat (is_directory())";
+    std::cerr << "[WARNING]: Error al guardar el stat (is_directory())" << std::endl;
     return false;
   }
   if(S_ISDIR(file_info.st_mode)) { // COMPROBACIÓN: DIRECTORIO

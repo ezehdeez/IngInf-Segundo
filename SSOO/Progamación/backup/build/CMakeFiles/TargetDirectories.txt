@@ -1,0 +1,4 @@
+/home/ezehdeez/IngInf-Segundo/SSOO/Progamación/backup/build/CMakeFiles/backup.dir
+/home/ezehdeez/IngInf-Segundo/SSOO/Progamación/backup/build/CMakeFiles/backup-server.dir
+/home/ezehdeez/IngInf-Segundo/SSOO/Progamación/backup/build/CMakeFiles/edit_cache.dir
+/home/ezehdeez/IngInf-Segundo/SSOO/Progamación/backup/build/CMakeFiles/rebuild_cache.dir

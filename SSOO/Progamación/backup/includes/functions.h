@@ -22,7 +22,9 @@
 #include <limits.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 
+std::string get_environment_variable(const std::string& name);
 std::string get_work_dir_path();
 std::string get_fifo_path();
 std::string get_pid_file_path();
