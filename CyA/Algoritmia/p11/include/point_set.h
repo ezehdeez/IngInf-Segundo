@@ -21,16 +21,17 @@ class point_set : public CyA::point_vector {
  private:
   CyA::tree emst_;
  public:
-  point_set(const CyA::point_vector &points) {EMST();}
+  point_set(const CyA::point_vector &points) : CyA::point_vector(points) { EMST(); }
   ~point_set(void) {
     this->clear();
     emst_.clear();
   }
 
-  void EMST(void);
+  void EMST(void); 
 
   void write_tree(std::ostream &os) const;
   void write(std::ostream &os) const;
+  void write_dot(std::ostream &os) const;
 
   inline const CyA::tree& get_tree(void) const { return emst_; }
   inline const CyA::point_vector& get_points(void) const { return *this; }
