@@ -1,0 +1,24 @@
+graph {
+  // Configuración global
+  node [shape=circle, fixedsize=true, width=0.3, style=filled, fillcolor=lightblue];
+  edge [color=black, penwidth=2];
+  0 [pos="68.00,-21.00!", label="0"];
+  1 [pos="57.00,60.00!", label="1"];
+  2 [pos="82.00,-60.00!", label="2"];
+  3 [pos="-33.00,54.00!", label="3"];
+  4 [pos="-44.00,11.00!", label="4"];
+  5 [pos="-5.00,26.00!", label="5"];
+  6 [pos="-27.00,3.00!", label="6"];
+  7 [pos="90.00,83.00!", label="7"];
+  8 [pos="27.00,43.00!", label="8"];
+  9 [pos="-72.00,21.00!", label="9"];
+  0 -- 2;
+  4 -- 6;
+  4 -- 9;
+  5 -- 6;
+  1 -- 8;
+  5 -- 8;
+  3 -- 5;
+  1 -- 7;
+  0 -- 8;
+}

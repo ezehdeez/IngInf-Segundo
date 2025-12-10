@@ -48,7 +48,7 @@ void point_set::compute_arc_vector(CyA::arc_vector &av) const {
       av.push_back(std::make_pair(dist, std::make_pair(p_i, p_j)));
     }
   }
-  std::sort(av.begin(), av.end());
+  std::sort(av.rbegin(), av.rend());
 }
 
 double point_set::euclidean_distance(const CyA::arc& a) const {
