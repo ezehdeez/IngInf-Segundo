@@ -1,0 +1,26 @@
+graph quickhull {
+  node [shape=point];
+  p0 [pos="68,-21!"];
+  p1 [pos="57,60!"];
+  p2 [pos="82,-60!"];
+  p3 [pos="-33,54!"];
+  p4 [pos="-44,11!"];
+  p5 [pos="-5,26!"];
+  p6 [pos="-27,3!"];
+  p7 [pos="90,83!"];
+  p8 [pos="27,43!"];
+  p9 [pos="-72,21!"];
+  edge [color=red, penwidth=2.0];
+  "h0" [pos="-72,21!", style=invis];
+  "h1" [pos="82,-60!", style=invis];
+  "h0" -- "h1";
+  "h1" [pos="82,-60!", style=invis];
+  "h2" [pos="90,83!", style=invis];
+  "h1" -- "h2";
+  "h2" [pos="90,83!", style=invis];
+  "h3" [pos="-33,54!", style=invis];
+  "h2" -- "h3";
+  "h3" [pos="-33,54!", style=invis];
+  "h0" [pos="-72,21!", style=invis];
+  "h3" -- "h0";
+}

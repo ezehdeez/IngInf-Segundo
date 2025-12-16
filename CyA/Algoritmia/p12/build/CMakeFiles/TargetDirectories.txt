@@ -1,0 +1,3 @@
+/home/ezehdeez/IngInf-Segundo/CyA/Algoritmia/p12/build/CMakeFiles/p12_dyv.dir
+/home/ezehdeez/IngInf-Segundo/CyA/Algoritmia/p12/build/CMakeFiles/edit_cache.dir
+/home/ezehdeez/IngInf-Segundo/CyA/Algoritmia/p12/build/CMakeFiles/rebuild_cache.dir
