@@ -7,6 +7,7 @@ class Tape;
 
 class Ant {
  public:
+  Ant() = default;
   Ant(int orientation, int x, int y) : orientation_{orientation}, x_{x}, y_{y} {}
 
   void TurnRight();

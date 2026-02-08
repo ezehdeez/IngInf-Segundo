@@ -12,6 +12,7 @@ class Ant;
 
 class Tape {
  public:
+  Tape() = default;
   Tape(size_t x_size, size_t y_size) : x_size_{x_size}, y_size_{y_size}, grid_{} {
     grid_.resize(x_size_);
     for(int i = 0; i < x_size; i++) {

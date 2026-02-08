@@ -6,7 +6,12 @@
 class Simulator {
  public:
   Simulator(const std::string&);
+
+  void RunSimulation();
+  
  private:
   Ant ant_;
   Tape tape_;
+  
+  void ExportFile();
 };
