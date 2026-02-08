@@ -152,6 +152,7 @@ CMakeFiles/langton.dir/src/main.cc.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/functions.h \
  /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/tape.h \
  /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/colors.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \
@@ -163,4 +164,7 @@ CMakeFiles/langton.dir/src/main.cc.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/simulator.h
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/simulator.h \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/ant.h \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/tape.h \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/../include/colors.h

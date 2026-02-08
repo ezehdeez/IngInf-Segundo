@@ -81,12 +81,12 @@ clean: CMakeFiles/langton.dir/clean
 CMakeFiles/langton.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target langton"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target langton"
 .PHONY : CMakeFiles/langton.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/langton.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/langton.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/build/CMakeFiles 0
 .PHONY : CMakeFiles/langton.dir/rule

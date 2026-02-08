@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/ant.cc" "CMakeFiles/langton.dir/src/ant.cc.o" "gcc" "CMakeFiles/langton.dir/src/ant.cc.o.d"
+  "/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/functions.cc" "CMakeFiles/langton.dir/src/functions.cc.o" "gcc" "CMakeFiles/langton.dir/src/functions.cc.o.d"
   "/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/main.cc" "CMakeFiles/langton.dir/src/main.cc.o" "gcc" "CMakeFiles/langton.dir/src/main.cc.o.d"
   "/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/simulator.cc" "CMakeFiles/langton.dir/src/simulator.cc.o" "gcc" "CMakeFiles/langton.dir/src/simulator.cc.o.d"
   "/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/tape.cc" "CMakeFiles/langton.dir/src/tape.cc.o" "gcc" "CMakeFiles/langton.dir/src/tape.cc.o.d"

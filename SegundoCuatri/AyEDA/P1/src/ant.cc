@@ -4,11 +4,13 @@
 #include <cassert>
 
 void Ant::TurnRight() {
-  orientation_ = (orientation_ + 2) % 4;
+  static const int rightOf[4] = {2, 3, 1, 0}; // L->U, R->D, U->R, D->L
+  orientation_ = rightOf[orientation_];
 }
 
 void Ant::TurnLeft() {
-  orientation_ = (orientation_ + 3) % 4;
+  static const int leftOf[4]  = {3, 2, 0, 1}; // L->D, R->U, U->L, D->R
+  orientation_ = leftOf[orientation_];
 }
 
 void Ant::Move(const Tape& cinta) {
@@ -20,10 +22,10 @@ void Ant::Move(const Tape& cinta) {
     y_++;
     break;
     case 2:
-    x_++;
+    x_--;
     break;
     case 3:
-    x_--;
+    x_++;
     break;
   }
   assert(x_ < cinta.GetXSize() && y_ < cinta.GetYSize());
@@ -46,10 +48,10 @@ std::ostream& operator<<(std::ostream& out, const Ant& ant) {
   char c;
   switch(ant.GetOrientation()) {
     case 0:
-      c = '>';
+      c = '<';
       break;
     case 1:
-      c = '<';
+      c = '>';
       break;
     case 2:
       c = '^';

@@ -153,6 +153,30 @@ src/ant.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/src/ant.cc.s
 .PHONY : src/ant.cc.s
 
+src/functions.o: src/functions.cc.o
+.PHONY : src/functions.o
+
+# target to build an object file
+src/functions.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/src/functions.cc.o
+.PHONY : src/functions.cc.o
+
+src/functions.i: src/functions.cc.i
+.PHONY : src/functions.i
+
+# target to preprocess a source file
+src/functions.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/src/functions.cc.i
+.PHONY : src/functions.cc.i
+
+src/functions.s: src/functions.cc.s
+.PHONY : src/functions.s
+
+# target to generate assembly for a file
+src/functions.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langton.dir/build.make CMakeFiles/langton.dir/src/functions.cc.s
+.PHONY : src/functions.cc.s
+
 src/main.o: src/main.cc.o
 .PHONY : src/main.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... src/ant.o"
 	@echo "... src/ant.i"
 	@echo "... src/ant.s"
+	@echo "... src/functions.o"
+	@echo "... src/functions.i"
+	@echo "... src/functions.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

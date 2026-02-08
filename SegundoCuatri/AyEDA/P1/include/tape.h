@@ -14,8 +14,9 @@ class Tape {
  public:
   Tape() = default;
   Tape(size_t x_size, size_t y_size) : x_size_{x_size}, y_size_{y_size}, grid_{} {
+    std::cout << "entro constructor tape" << std::endl;
     grid_.resize(x_size_);
-    for(int i = 0; i < x_size; i++) {
+    for(int i = 0; i < x_size_; i++) {
       grid_[i].resize(y_size_);
       for(int j = 0; j < y_size_; j++) {
         grid_[i][j] = 0;

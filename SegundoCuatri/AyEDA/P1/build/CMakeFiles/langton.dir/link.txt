@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/langton.dir/src/main.cc.o CMakeFiles/langton.dir/src/ant.cc.o CMakeFiles/langton.dir/src/tape.cc.o CMakeFiles/langton.dir/src/simulator.cc.o -o langton 
+/usr/bin/c++ CMakeFiles/langton.dir/src/main.cc.o CMakeFiles/langton.dir/src/ant.cc.o CMakeFiles/langton.dir/src/tape.cc.o CMakeFiles/langton.dir/src/simulator.cc.o CMakeFiles/langton.dir/src/functions.cc.o -o langton 

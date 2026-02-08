@@ -1,8 +1,7 @@
-CMakeFiles/langton.dir/src/simulator.cc.o: \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/simulator.cc \
+CMakeFiles/langton.dir/src/functions.cc.o: \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/functions.cc \
  /usr/include/stdc-predef.h \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/simulator.h \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/ant.h \
+ /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/ant.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
@@ -152,20 +151,8 @@ CMakeFiles/langton.dir/src/simulator.cc.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/tape.h \
- /home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P1/src/../include/../include/../include/colors.h \
- /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/c++/13/cstdint \
- /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/fstream \
  /usr/include/c++/13/bits/codecvt.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc
+ /usr/include/c++/13/bits/fstream.tcc

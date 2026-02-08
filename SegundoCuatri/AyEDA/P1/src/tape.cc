@@ -22,8 +22,8 @@ void Tape::PrintUntilAnt(Ant* ant) {
 
 void Tape::PrintPostAnt(Ant* ant) {
   for(size_t i = ant->GetX(); i < GetXSize(); i++) {
-    size_t startX = (i == ant->GetX()) ? ant->GetX() + 1 : 0;
-    for(size_t j = startX; j < GetYSize(); j++) {
+    size_t startY = (i == ant->GetX()) ? ant->GetY() + 1 : 0;
+    for(size_t j = startY; j < GetYSize(); j++) {
       if(GetCell(i, j)) {
         std::cout << BLUE << "■" << RESET;
       } else {
