@@ -57,17 +57,22 @@ Simulator::Simulator(const std::string& file_name) : ant_{}, tape_{} {
  */
 void Simulator::RunSimulation() {
   int step_count = 0;
+  int turn_right_count = 0;
   while(true) {
     std::system("clear");
     tape_.PrintUntilAnt(&ant_);
     std::cout << ant_;
     tape_.PrintPostAnt(&ant_);
     std::cout << "STEP COUNT: " << step_count << "\n" << std::endl;
+    std::cout << "TURN RIGHT COUNT: " << turn_right_count << "\n" << std::endl;
     std::cout << "(N)ext step / (S)ave current state" << std::endl;
     char answer = 'N';
     std::cin >> answer;
     if(answer == 'N') {
       step_count++;
+      if(tape_.GetCell(ant_.GetX(), ant_.GetY())) {
+        turn_right_count++;
+      } // If black, turns right
       ant_.Step(tape_);
       continue;
     } else if(answer == 'S') {
