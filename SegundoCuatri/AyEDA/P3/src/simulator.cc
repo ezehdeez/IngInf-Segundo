@@ -82,6 +82,11 @@ Simulator::Simulator(const std::string& file_name, int tape_type) : number_of_co
   std::cout << "Simulator built" << std::endl;
 }
 
+/**
+ * @brief Prints the current state of the tape and the ants to the console.
+ * It calculates dynamic boundaries (a camera effect) to ensure all ants 
+ * are visible, even if they step outside the original memory grid.
+ */
 void Simulator::PrintTape() {
   int min_x = tape_->GetMinX();
   int max_x = tape_->GetMaxX();
@@ -167,6 +172,10 @@ void Simulator::RunSimulation() {
   }
 }
 
+/**
+ * @brief Checks for collisions in the same cell to resolve combats.
+ * If two ants share the same coordinates, it delegates the event to ApplyCarnivoreRules.
+ */
 void Simulator::UpdateLifeTime() {
   for (size_t i = 0; i < ants_.size(); i++) {
     for (size_t j = i + 1; j < ants_.size(); j++) {
@@ -178,6 +187,12 @@ void Simulator::UpdateLifeTime() {
   }
 }
 
+/**
+ * @brief Applies damage and health absorption rules if the attacker is a carnivore.
+ * Uses RTTI (dynamic_cast) to verify inheritance without relying on type variables.
+ * @param attacker Pointer to the ant evaluating its attack.
+ * @param victim Pointer to the target ant.
+ */
 void Simulator::ApplyCarnivoreRules(Ant* attacker, Ant* victim) {
   Ant_C* carnivore = dynamic_cast<Ant_C*>(attacker);
   if(carnivore != nullptr) {

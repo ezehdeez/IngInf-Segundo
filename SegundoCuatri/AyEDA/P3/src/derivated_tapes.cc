@@ -3,7 +3,7 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: 
+ * @subject: AyEDA - P3
  * 
  * @file derivated_tapes.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
@@ -17,6 +17,11 @@ void TapePeriodic::PrintCell(const int x, const int y) {
   std::cout << ColorToCode(grid_[x][y]) << "■" << RESET;
 }
 
+/**
+ * @brief Checks and applies the periodic boundary rules (Pac-Man effect).
+ * If the ant goes out of bounds, it teleports to the opposite side of the tape.
+ * @param ant Pointer to the ant that just moved.
+ */
 void TapePeriodic::CheckMove(Ant* ant) {
   if(ant->GetX() >= static_cast<int>(GetXSize())) {
     ant->SetX(0);
@@ -35,6 +40,12 @@ void TapeReflective::PrintCell(const int x, const int y) {
   std::cout << ColorToCode(grid_[x][y]) << "■" << RESET;
 }
 
+/**
+ * @brief Checks and applies the reflective boundary rules (Bounce effect).
+ * If the ant goes out of bounds, it is forced back into a valid cell 
+ * and performs a 180-degree turn.
+ * @param ant Pointer to the ant that just moved.
+ */
 void TapeReflective::CheckMove(Ant* ant) {
   bool out_of_bounds = false;
   if(ant->GetX() >= static_cast<int>(GetXSize())) {
@@ -67,6 +78,14 @@ void TapeSliding::FillVectorAsDefalult(SlidingVector<Color>& vector) {
   }
 }
 
+/**
+ * @brief Retrieves the color of a specific cell in the sliding tape.
+ * By using a SlidingVector, if an out-of-bounds cell is requested, 
+ * the function catches the SVException internally and returns a default white cell.
+ * @param x X coordinate (Row).
+ * @param y Y coordinate (Column).
+ * @return Color The color of the cell, or WHITE_CELL if it hasn't been generated yet.
+ */
 Color TapeSliding::GetCell(int x, int y) const {
   try {
     const SlidingVector<Color>& column = grid_[x];
@@ -80,6 +99,15 @@ Color TapeSliding::GetCell(int x, int y) const {
   }
 }
 
+/**
+ * @brief Paints a cell on the infinite (sliding) tape.
+ * If the requested cell is outside the current memory bounds, it catches 
+ * the SVException and dynamically expands the matrix using PushFront or PushBack 
+ * as needed, retrying until successful.
+ * @param x X coordinate (Row).
+ * @param y Y coordinate (Column).
+ * @param color The color to be painted.
+ */
 void TapeSliding::DrawCell(int x, int y, const Color& color) {
   bool cell_drawn = false;
   while (!cell_drawn) {

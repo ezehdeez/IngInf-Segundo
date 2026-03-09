@@ -1,5 +1,23 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * 
+ * @subject: AyEDA - P3
+ * 
+ * @file derivated_ants.cc
+ * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
+ * @date 2026-03-09
+ * @brief 
+ */
+
 #include "../include/derivated_ants.h"
 
+/**
+ * @brief Performs the diagonal movement exclusive to carnivore ants.
+ * @param direction Direction of the diagonal ('L' for left, 'R' for right) 
+ *                  relative to the ant's current orientation.
+ */
 void Ant_C::DiagonalMove(char direction) {
   if(direction == 'L') {
     switch(GetOrientation()) {
@@ -42,6 +60,12 @@ void Ant_C::DiagonalMove(char direction) {
   }
 }
 
+/**
+ * @brief Executes the turn of a Herbivore ant (Rule: DDII).
+ * The ant reads the color, absorbs its nutritional value, turns, 
+ * paints the current cell, and moves to the next cell.
+ * @param cinta Pointer to the tape where the ant is located.
+ */
 void Ant_H_DDII::Step(Tape* cinta) {
   int nutrition = static_cast<int>(cinta->GetCell(GetX(), GetY()));
   SumToLifeTime(nutrition);
@@ -56,6 +80,12 @@ void Ant_H_DDII::Step(Tape* cinta) {
     Move();
 }
 
+/**
+ * @brief Executes the turn of a Carnivore ant (Rule: IDID).
+ * The ant reads the color, turns, paints the current cell, 
+ * and performs a diagonal jump based on its turn direction.
+ * @param cinta Pointer to the tape where the ant is located.
+ */
 void Ant_C_IDID::Step(Tape* cinta) {
   bool right_turn = false;
   if(cinta->GetCell(GetX(), GetY()) == static_cast<Color>(1) || 

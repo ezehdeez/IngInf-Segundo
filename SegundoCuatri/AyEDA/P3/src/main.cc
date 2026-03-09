@@ -3,7 +3,7 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: AyEDA - P1
+ * @subject: AyEDA - P3
  * 
  * @file main.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
@@ -12,9 +12,11 @@
  *        on an ant which follows a set of instructions to move through an infinite
  *        tape (in our case is finite). Input file has to follow the next format:
  * 
- *            Línea 1: Tamaño de la cinta
- *            Línea 2: Posición inicial y orientación de la hormiga
- *            Línea 3..n: Posiciones de las celdas negras (valor binario 1).
+ *            Línea 1: 7 10 4
+ *            Línea 2: H-DDII 3 3 > ; C-IDID 5 7 v
+ *            Línea 3: 3 4 1
+ *            Línea 4: 3 5 2
+ *            Línea 5: 5 5 3
  */
 
 #include "../include/ant.h"

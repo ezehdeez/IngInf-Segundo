@@ -1,3 +1,16 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * 
+ * @subject: AyEDA - P3
+ * 
+ * @file derivated_ants.h
+ * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
+ * @date 2026-03-09
+ * @brief Derivated ants classes declarations, inheritance from Ant class
+ */
+
 #include "../include/ant.h"
 #include "../include/tape.h"
 

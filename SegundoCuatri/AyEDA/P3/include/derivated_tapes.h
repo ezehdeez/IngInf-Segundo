@@ -1,3 +1,16 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * 
+ * @subject: AyEDA - P3
+ * 
+ * @file derivated_tapes.h
+ * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
+ * @date 2026-03-09
+ * @brief Derivated tapes classes declarations, inheritance from Tape class
+ */
+
 #include "../include/sliding_vector.h"
 #include "../include/tape.h"
 

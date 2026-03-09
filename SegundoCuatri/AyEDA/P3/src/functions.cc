@@ -3,7 +3,7 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: AyEDA - P1
+ * @subject: AyEDA - P3
  * 
  * @file functions.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
