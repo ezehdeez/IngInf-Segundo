@@ -1,0 +1,8 @@
+1. Pasar el tipo de cinta como parámetro
+2. Cuando dos hormigas se encuentren, el manejo es a de libre eleccion
+3. Para comprobar los choques, la responsabilidad es del simulador
+4. La excepcion debe encapsular el extremo por el que ha fallado [DONE]
+
+REMAINING:
+  Tratar los bordes, posiblemente crear un metodo en Simulator
+  Constructor y export file en clase Simulator
