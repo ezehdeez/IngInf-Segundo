@@ -1,0 +1,3 @@
+/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P3/modi/build/CMakeFiles/generalized_langton.dir
+/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P3/modi/build/CMakeFiles/edit_cache.dir
+/home/ezehdeez/IngInf-Segundo/SegundoCuatri/AyEDA/P3/modi/build/CMakeFiles/rebuild_cache.dir
