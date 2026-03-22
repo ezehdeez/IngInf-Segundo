@@ -1,0 +1,3 @@
+Hay que usar especialización de templates para hacer las hashtable (hay dos opciones)
+Hay que hacer una definicion abstracta de dispersionfunction y explorationfunction, y hacer una clase derivada para cada caso especifico
+se tiene que sobrecargar el operador funcion para lo mencionado previamente para usar el nombre del objeto como funcion: "f()"
