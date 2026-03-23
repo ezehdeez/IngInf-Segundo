@@ -3,12 +3,12 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: 
+ * @subject: AyEDA - P4
  * 
  * @file nif.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
  * @date 2026-03-22
- * @brief 
+ * @brief NIF class declaration
  */
 
 #include "../include/nif.h"

@@ -3,12 +3,13 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: 
+ * @subject: AyEDA - P4
  * 
  * @file main.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
  * @date 2026-03-22
- * @brief 
+ * @brief Main program "hash", interactive hash table that is able to insert and
+ *        search elements.
  */
 
 #include "../include/config.h"

@@ -3,12 +3,13 @@
  * Escuela Superior de Ingeniería y Tecnología
  * Grado en Ingeniería Informática
  * 
- * @subject: 
+ * @subject: AyEDA - P4
  * 
  * @file functions.cc
  * @author Ezequiel Hernández Poleo (alu0101735399@ull.edu.es)
  * @date 2026-03-22
- * @brief 
+ * @brief Main functions used by main.cc, such us argument parser and the menu
+ *        itself.
  */
 
 #include <cstdlib>
