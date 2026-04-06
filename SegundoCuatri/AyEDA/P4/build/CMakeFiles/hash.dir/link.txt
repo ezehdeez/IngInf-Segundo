@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/hash.dir/src/main.cc.o CMakeFiles/hash.dir/src/nif.cc.o CMakeFiles/hash.dir/src/functions.cc.o -o hash 
