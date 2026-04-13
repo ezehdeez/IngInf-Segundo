@@ -1,0 +1,8 @@
+Queremos un unico programa en el que yo pueda utilizar cualquier metodo.
+
+Polimorfismo dinamico en el -ord. Usamos a,b,c,d,e para el codigo.
+
+Delta sera n * ⍺ en vez de n / 2
+
+Falta por hacer los metodos de ordenacion como tal, la clase sortmethod y derivadas.
+Además del main y los operadores [] de lectura y escritura de static_sequence

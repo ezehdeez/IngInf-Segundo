@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hash.dir/src/main.cc.o CMakeFiles/hash.dir/src/functions.cc.o CMakeFiles/hash.dir/src/nif.cc.o -o hash
