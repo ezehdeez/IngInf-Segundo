@@ -208,7 +208,7 @@ void HeapsortWTrace(staticSequence<Key>& sec, size_t size) {
 }
 
 template <class Key>
-void deltasort(int delta, staticSequence<Key>& sec, int n) {
+void deltasort(int delta, staticSequence<Key>& sec, int n, bool dotrace) {
   Key x;
   int j;
   for(int i = delta; i < n; i++) {
@@ -219,6 +219,10 @@ void deltasort(int delta, staticSequence<Key>& sec, int n) {
       j = j - delta;
     }
     sec[j] = x;
+    if(dotrace) {
+      sec.print();
+      std::cout << "\n";
+    }
   }
 }
 
@@ -247,7 +251,6 @@ void DeltasortWTrace(staticSequence<Key>& sec, size_t size) {
   std::cin >> alpha;
   std::cout << "\n";
   int delta = size * alpha;
-  int iteration = 0;
   while(delta > 0) {
     deltasort(delta, sec, size);
     std::cout << "Iteration " << iteration++ << " (Delta = " << delta << "):" << std::endl;

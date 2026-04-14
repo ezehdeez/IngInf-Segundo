@@ -64,6 +64,15 @@ class DeltaSort : public SortMethod<Key> {
 };
 
 template <class Key>
+class ModiSort : public SortMethod<Key> {
+ public:
+  ModiSort(const staticSequence<Key>& seq, bool trace)
+  : SortMethod<Key>(seq, trace) {}
+
+  void Sort() override;
+};
+
+template <class Key>
 void SelectionSort<Key>::Sort() {
   if(this->dotrace_) {
     SelectionsortWTrace(this->sequence_, this->sequence_.size());
@@ -119,4 +128,73 @@ void DeltaSort<Key>::Sort() {
     this->sequence_.print();
     std::cout << "\n";
   }
+}
+
+template <class Key>
+void ModiSort<Key>::Sort() {
+  size_t n = this->sequence_.size();
+  if (n <= 1) return;
+  size_t mid = n / 2;
+  std::cout << "INITIAL VALUES:\n";
+  this->sequence_.print();
+  std::cout << "\n";
+  // InsertionSort
+  for(size_t i = 1; i < mid; i++) {
+    Key x = this->sequence_[i];
+    size_t j = i;
+    while(j > 0 && x < this->sequence_[j - 1]) {
+      this->sequence_[j] = this->sequence_[j - 1];
+      j--;
+    }
+    this->sequence_[j] = x;
+    this->sequence_.print();
+    std::cout << "\n";
+  }
+  std::cout << "[INFO]: InsertionSort Finished\n";
+  // SelectionSort
+  for(size_t i = mid; i < n - 1; i++) {
+    size_t min = i;
+    for (size_t j = i + 1; j < n; j++) {
+      if (this->sequence_[j] < this->sequence_[min]) {
+        min = j;
+      }
+    }
+    std::swap(this->sequence_[i], this->sequence_[min]);
+    this->sequence_.print();
+    std::cout << "\n";
+  }
+  std::cout << "[INFO]: SelectionSort Finished\n";
+  this->sequence_.print();
+  std::cout << "\n";
+  // Merge
+  staticSequence<Key> aux(n); 
+  size_t i = 0;
+  size_t j = mid;
+  size_t k = 0;
+  while(i < mid && j < n) {
+    if(this->sequence_[i] < this->sequence_[j]) {
+      aux[k] = this->sequence_[i];
+      i++;
+    } else {
+      aux[k] = this->sequence_[j];
+      j++;
+    }
+    k++;
+  }
+  while(i < mid) {
+    aux[k] = this->sequence_[i];
+    i++;
+    k++;
+  }
+  while(j < n) {
+    aux[k] = this->sequence_[j];
+    j++;
+    k++;
+  }
+  for (size_t idx = 0; idx < n; idx++) {
+    this->sequence_[idx] = aux[idx];
+  }
+  std::cout << "[INFO]: Merge Finished\n";
+  this->sequence_.print();
+  std::cout << "\n";
 }

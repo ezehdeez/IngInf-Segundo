@@ -1,3 +1,0 @@
-/Users/ezehdezpl/www/IngInf-Segundo/SegundoCuatri/AyEDA/P5/build/CMakeFiles/hash.dir
-/Users/ezehdezpl/www/IngInf-Segundo/SegundoCuatri/AyEDA/P5/build/CMakeFiles/edit_cache.dir
-/Users/ezehdezpl/www/IngInf-Segundo/SegundoCuatri/AyEDA/P5/build/CMakeFiles/rebuild_cache.dir

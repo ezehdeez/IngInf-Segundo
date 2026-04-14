@@ -32,6 +32,8 @@ void PrintUsage(const std::string& program_name) {
             << "                  b : Burbuja\n"
             << "                  c : MergeSort\n"
             << "                  d : HeapSort\n"
+            << "                  e : Por Incrementos Decrecientes\n"
+            << "                  e : InsertionSort + SelectionSort + Merge both halfs\n"
             << "  -init <i> [f] Modo de inicialización de la secuencia:\n"
             << "                  manual : El usuario introduce los NIFs por teclado.\n"
             << "                  random : Generación aleatoria de los NIFs.\n"
@@ -143,6 +145,9 @@ SortMethod<NIF>* BuildSortMethod(const ProgramConfig& config) {
       break;
     case 'e':
       sort_method = new DeltaSort<NIF>(*sequence, config.dotrace);
+      break;
+    case 'f':
+      sort_method = new ModiSort<NIF>(*sequence, config.dotrace);
       break;
     default:
       throw std::runtime_error("[ERROR]: Sort method option unrecognized.");

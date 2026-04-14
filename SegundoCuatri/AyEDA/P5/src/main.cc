@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
     std::cerr << "\n" << e.what() << "\n";
     return 1;
   } catch(const std::exception& e) {
-    std::cerr << "[CRITICAL ERROR]: " << e.what() << "\n";
+    std::cerr << "[ERROR]: " << e.what() << "\n";
     return 1;
   }
   return 0;
