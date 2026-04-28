@@ -1,0 +1,2 @@
+Hay que usar reinterpret_cast para convertir la raiz de AB en un NodoAVL en vez 
+de NodoB.
